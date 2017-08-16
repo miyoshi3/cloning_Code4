@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :videos
-  get 'pages/about'
+  get 'pages/about', to: 'pages#about'
 
-  get 'pages/contact'
+  get 'pages/contact', to: 'pages#contact'
 
   root 'videos#index'
 
